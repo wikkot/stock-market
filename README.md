@@ -39,5 +39,7 @@ Przykład:
 ```shell
 java GPWSimulation input.txt 100000
 ```
-gdzie input.txt to plik wejściowy określający stan początkowy, a 100000 to liczba tur
-symulacji. Przykładowe pliki wejściowe można znaleźć w folderze input/
+
+gdzie input.txt to plik wejściowy określający stan początkowy, a 100000 to liczba tur symulacji.
+
+Przykładowe pliki wejściowe można znaleźć w folderze input/
