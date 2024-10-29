@@ -5,13 +5,13 @@ This project was done for a college class, where I've learnt OOP and JUnit frame
 # System Transakcyjny Giełdy Papierów Wartościowych
 
 ## Opis
-System obsługuje transakcje kupna i sprzedaży akcji spółek. Zlecenia mogą zawierać:
+System obsługuje transakcje kupna i sprzedaży akcji spółek. Zlecenia zawierają:
 - Typ zlecenia: kupno/sprzedaż
 - Identyfikator akcji (ciąg znaków ASCII A-Z, maks. 5 znaków)
 - Liczba akcji (dodatnia liczba całkowita)
 - Limit ceny (dodatnia liczba całkowita)
 
-Transakcje realizowane są w przypadku zgodności cen zleceń kupna i sprzedaży. Priorytet ma wyższa cena kupna i niższa cena sprzedaży.
+Transakcje realizowane są w przypadku zgodności cen zleceń kupna i sprzedaży (tj. gdy cena kupna nie jest niższa od ceny sprzedaży).
 
 ## Rodzaje Zleceń
 1. **Natychmiastowe** – musi być zrealizowane (choćby częściowo) w tej samej turze; pozostała część jest eliminowana.
@@ -40,4 +40,4 @@ Przykład:
 java GPWSimulation input.txt 100000
 ```
 gdzie input.txt to plik wejściowy określający stan początkowy, a 100000 to liczba tur
-symulacji.
+symulacji. Przykładowe pliki wejściowe można znaleźć w folderze input/
